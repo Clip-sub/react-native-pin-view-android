@@ -1,0 +1,22 @@
+{
+  "name": "react-native-pin-view-android",
+  "version": "1.0.0",
+  "description": "PinView for React Native Android",
+  "main": "pinview.js",
+  "keywords": [
+    "pin",
+    "ononpay",
+    "android",
+    "ios"
+  ],
+  "author": "Doko",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https@github.com:Doko-Demo-Doa/react-native-pin-view-android.git"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  }
+}

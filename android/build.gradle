@@ -1,0 +1,31 @@
+apply plugin: "com.android.library"
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.2"
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+    }
+}
+
+allprojects {
+    repositories {
+        mavenLocal()
+        jcenter()
+        maven {
+            // For developing the library outside the context of the example app, expect `react-native`
+            // to be installed at `./node_modules`.
+            url "$projectDir/../node_modules/react-native/android"
+        }
+    }
+}
+
+dependencies {
+    compile "com.facebook.react:react-native:+"
+    compile "com.android.support:appcompat-v7:27.+"
+    compile 'com.chaos.view:pinview:1.2.0'
+}
