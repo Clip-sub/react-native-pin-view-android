@@ -2,7 +2,7 @@
   "name": "react-native-pin-view-android",
   "version": "1.0.0",
   "description": "PinView for React Native Android",
-  "main": "pinview.js",
+  "main": "index.js",
   "keywords": [
     "pin",
     "ononpay",
