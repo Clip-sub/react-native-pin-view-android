@@ -11,7 +11,7 @@
  */
 'use strict';
 
-const ColorPropType = require('ColorPropType');
+/*const ColorPropType = require('ColorPropType');
 const DocumentSelectionState = require('DocumentSelectionState');
 const EventEmitter = require('EventEmitter');
 const NativeMethodsMixin = require('NativeMethodsMixin');
@@ -22,21 +22,31 @@ const PropTypes = require('prop-types');
 const ReactNative = require('ReactNative');
 const StyleSheet = require('StyleSheet');
 const Text = require('Text');
-const TextInputState = require('TextInputState');
+const TextInputState = require('TextInputState');*/
 /* $FlowFixMe(>=0.54.0 site=react_native_oss) This comment suppresses an error
  * found when Flow v0.54 was deployed. To see the error delete this comment and
  * run Flow. */
 const TimerMixin = require('react-timer-mixin');
-const TouchableWithoutFeedback = require('TouchableWithoutFeedback');
+/*const TouchableWithoutFeedback = require('TouchableWithoutFeedback');
 const UIManager = require('UIManager');
-const ViewPropTypes = require('ViewPropTypes');
+const ViewPropTypes = require('ViewPropTypes');*/
+
+// Actual imports:
+import React from 'react';
+import createReactClass from 'create-react-class';
+import ReactNative, { ColorPropType, DocumentSelectionState,
+  EventEmitter, NativeMethodsMixin, Platform,
+  StyleSheet, Text, TextInputState, UIManager,
+  TouchableWithoutFeedback, ViewPropTypes, requireNativeComponent } from 'react-native';
+import PropTypes from 'prop-types';
+
 
 /* $FlowFixMe(>=0.54.0 site=react_native_oss) This comment suppresses an error
  * found when Flow v0.54 was deployed. To see the error delete this comment and
  * run Flow. */
 const emptyFunction = require('fbjs/lib/emptyFunction');
 const invariant = require('fbjs/lib/invariant');
-const requireNativeComponent = require('requireNativeComponent');
+//const requireNativeComponent = require('requireNativeComponent');
 /* $FlowFixMe(>=0.54.0 site=react_native_oss) This comment suppresses an error
  * found when Flow v0.54 was deployed. To see the error delete this comment and
  * run Flow. */
@@ -48,7 +58,7 @@ const onlyMultiline = {
 };
 
 if (Platform.OS === 'android') {
-  var AndroidTextInput = requireNativeComponent('AndroidTextInput', null);
+  var AndroidTextInput = requireNativeComponent('RNPinView', null);
 } else if (Platform.OS === 'ios') {
   var RCTTextView = requireNativeComponent('RCTTextView', null);
   var RCTTextField = requireNativeComponent('RCTTextField', null);
