@@ -6,12 +6,13 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.ViewManager;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class RNPinViewPackage implements ReactPackage {
   @Override
   public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
-    return null;
+    return Collections.emptyList();
   }
 
   @Override
