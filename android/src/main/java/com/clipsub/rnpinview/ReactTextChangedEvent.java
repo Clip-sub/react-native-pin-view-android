@@ -20,7 +20,7 @@ import com.facebook.react.uimanager.events.RCTEventEmitter;
  */
 public class ReactTextChangedEvent extends Event<ReactTextChangedEvent> {
 
-  public static final String EVENT_NAME = "topChange";
+  public static final String EVENT_NAME = "topPinChange";
 
   private String mText;
   private int mEventCount;

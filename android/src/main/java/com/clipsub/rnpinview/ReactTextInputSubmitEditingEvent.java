@@ -20,7 +20,7 @@ import com.facebook.react.uimanager.events.RCTEventEmitter;
 /* package */ class ReactTextInputSubmitEditingEvent
     extends Event<ReactTextInputSubmitEditingEvent> {
 
-  private static final String EVENT_NAME = "topSubmitEditing";
+  private static final String EVENT_NAME = "topPinSubmitEditing";
 
   private String mText;
 

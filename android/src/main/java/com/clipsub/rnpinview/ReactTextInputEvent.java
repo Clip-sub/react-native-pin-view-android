@@ -20,7 +20,7 @@ import com.facebook.react.uimanager.events.RCTEventEmitter;
  */
 public class ReactTextInputEvent extends Event<ReactTextInputEvent> {
 
-  public static final String EVENT_NAME = "topTextInput";
+  public static final String EVENT_NAME = "topPinTextInput";
 
   private String mText;
   private String mPreviousText;

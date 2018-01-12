@@ -27,5 +27,5 @@ allprojects {
 dependencies {
     compile "com.facebook.react:react-native:+"
     compile "com.android.support:appcompat-v7:27.+"
-    compile 'com.chaos.view:pinview:1.2.0'
+    //compile 'com.chaos.view:pinview:1.2.0'
 }

@@ -1,17 +1,13 @@
 /**
  * Copyright (c) 2015-present, Facebook, Inc.
  * All rights reserved.
- *
+ * <p>
  * This source code is licensed under the BSD-style license found in the
  * LICENSE file in the root directory of this source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  */
 
 package com.clipsub.rnpinview;
-
-import javax.annotation.Nullable;
-
-import java.util.ArrayList;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -37,15 +33,17 @@ import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputConnection;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.EditText;
 
-import com.chaos.view.PinView;
 import com.facebook.infer.annotation.Assertions;
 import com.facebook.react.views.text.CustomStyleSpan;
 import com.facebook.react.views.text.ReactTagSpan;
 import com.facebook.react.views.text.ReactTextUpdate;
 import com.facebook.react.views.text.TextInlineImageSpan;
 import com.facebook.react.views.view.ReactViewBackgroundDrawable;
+
+import java.util.ArrayList;
+
+import javax.annotation.Nullable;
 
 /**
  * A wrapper around the EditText that lets us better control what happens when an EditText gets
@@ -72,16 +70,22 @@ public class ReactEditText extends PinView {
   private int mDefaultGravityVertical;
   private int mNativeEventCount;
   private int mMostRecentEventCount;
-  private @Nullable ArrayList<TextWatcher> mListeners;
-  private @Nullable TextWatcherDelegator mTextWatcherDelegator;
+  private @Nullable
+  ArrayList<TextWatcher> mListeners;
+  private @Nullable
+  TextWatcherDelegator mTextWatcherDelegator;
   private int mStagedInputType;
   private boolean mContainsImages;
   private boolean mBlurOnSubmit;
   private boolean mDisableFullscreen;
-  private @Nullable String mReturnKeyType;
-  private @Nullable SelectionWatcher mSelectionWatcher;
-  private @Nullable ContentSizeWatcher mContentSizeWatcher;
-  private @Nullable ScrollWatcher mScrollWatcher;
+  private @Nullable
+  String mReturnKeyType;
+  private @Nullable
+  SelectionWatcher mSelectionWatcher;
+  private @Nullable
+  ContentSizeWatcher mContentSizeWatcher;
+  private @Nullable
+  ScrollWatcher mScrollWatcher;
   private final InternalKeyListener mKeyListener;
   private boolean mDetectScrollMovement = false;
 
@@ -90,6 +94,7 @@ public class ReactEditText extends PinView {
   private static final KeyListener sKeyListener = QwertyKeyListener.getInstanceForFullKeyboard();
 
   public ReactEditText(Context context) {
+
     super(context);
     setFocusableInTouchMode(false);
 

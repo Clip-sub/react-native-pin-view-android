@@ -19,7 +19,7 @@ import com.facebook.react.uimanager.events.RCTEventEmitter;
  */
 /* package */ class ReactTextInputFocusEvent extends Event<ReactTextInputFocusEvent> {
 
-  private static final String EVENT_NAME = "topFocus";
+  private static final String EVENT_NAME = "topPinFocus";
 
   public ReactTextInputFocusEvent(int viewId) {
     super(viewId);

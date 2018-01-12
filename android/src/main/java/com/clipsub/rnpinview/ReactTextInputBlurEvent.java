@@ -19,7 +19,7 @@ import com.facebook.react.uimanager.events.RCTEventEmitter;
  */
 /* package */ class ReactTextInputBlurEvent extends Event<ReactTextInputBlurEvent> {
 
-  private static final String EVENT_NAME = "topBlur";
+  private static final String EVENT_NAME = "topPinBlur";
 
   public ReactTextInputBlurEvent(int viewId) {
     super(viewId);
